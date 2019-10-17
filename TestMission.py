@@ -45,7 +45,7 @@ print("# Return to Home")
 
 print("")
 print (">>Return")
-UAV.setAirSpeed(3)
+UAV.setAirSpeed(0)
 UAV.returnToHome()
 
 #print("")

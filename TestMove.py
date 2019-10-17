@@ -20,15 +20,15 @@ print("# Test move to coordinates")
 
 print("")
 print (">>Move to x, y (-20, 20)")
-UAV.setAirSpeed(5)
-UAV.nav_goto_gps_xy_NE_coordinates(-20, 20)
+UAV.setAirSpeed(0)
+UAV.nav_goto_gps_xy_NE_coordinates(-3, 3)
 print("Succeeded")
 time.sleep(2)
 
 print("")
 print(">>Move to x, y (20, 20)")
-UAV.setAirSpeed(5)
-UAV.nav_goto_gps_xy_NE_coordinates(20, 20)
+UAV.setAirSpeed(0)
+UAV.nav_goto_gps_xy_NE_coordinates(3, 3)
 print("Succeeded")
 time.sleep(2)
 
@@ -38,7 +38,7 @@ print("# Return to Home")
 
 print("")
 print (">>Return")
-UAV.setAirSpeed(3)
+UAV.setAirSpeed(0)
 UAV.returnToHome()
 
 #print("")
