@@ -35,8 +35,8 @@ while True:
         attitude_message = master.recv_match(type='ATTITUDE', blocking=True).to_dict()
         servo_message = master.recv_match(type='SERVO_OUTPUT_RAW', blocking=True).to_dict()
         date = detail.strftime("%Y_%m_%d_%H_%M_%S")
-        latitude = float(GPS_message['lat'])/10000000
-        longitude = float(GPS_message['lon'])/10000000
+        latitude = float(GPS_message['lat'])/10**7
+        longitude = float(GPS_message['lon'])/10**7
         roll = float(attitude_message['roll'])
         pitch = float(attitude_message['pitch'])
         yaw = float(attitude_message['yaw'])
